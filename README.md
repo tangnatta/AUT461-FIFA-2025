@@ -8,19 +8,6 @@
    python -m venv venv
    ```
 
-2. Activate the virtual environment:
-   - On Windows:
-     ```bash
-     venv\Scripts\activate
-     ```
-   - On macOS/Linux:
-     ```bash
-     source venv/bin/activate
-     ```
-3. Install the required packages:
+2. Add `FifaStat.sqlite` to this repository directory or reconfigure the path of `FifaStat.sqlite` file in `main.ipynb`
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Run the `main.ipynb` notebook:
+3. Run the `main.ipynb` notebook:
