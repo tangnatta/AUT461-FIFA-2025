@@ -94,6 +94,19 @@ class FifaStatDatabase:
             dataframes[table] = self.execute_query_df(query)
         return dataframes
 
+    def get_table_as_dataframe(self, table_name: str) -> Optional[pd.DataFrame]:
+        """
+        Get a specific table as a pandas DataFrame
+
+        Args:
+            table_name (str): Name of the table
+
+        Returns:
+            pd.DataFrame: DataFrame of the specified table
+        """
+        query = f"SELECT * FROM {table_name}"
+        return self.execute_query_df(query)
+
     def close(self):
         """Close the database connection"""
         if self.connection:
