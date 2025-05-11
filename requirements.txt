@@ -2,3 +2,7 @@ scipy
 seaborn
 matplotlib
 pandas
+plotly
+ipywidgets
+nbformat
+tqdm
